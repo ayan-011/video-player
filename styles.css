@@ -52,19 +52,34 @@ body {
   background-color: black; 
 }
 
-.video-container.theater,
+.video-container.theater{
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+}
 .video-container.full-screen {
   max-width: initial;
   width: 100%;
+   
 }
 
 .video-container.theater {
-  max-height: 90vh;
-}
+  max-height: 98vh;
+  overflow: hidden;
+  
+     
+     
+} 
 
 /* Hide upload container when in theater mode */
 body.theater-mode .upload-container {
   display: none;
+ 
 }
 
 .video-container.full-screen {
